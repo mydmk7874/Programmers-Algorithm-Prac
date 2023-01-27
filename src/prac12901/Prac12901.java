@@ -1,3 +1,5 @@
+package prac12901;
+
 public class Prac12901 {
     public static void main(String[] args) {
         Solution s = new Solution();
