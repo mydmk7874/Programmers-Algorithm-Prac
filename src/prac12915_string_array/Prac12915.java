@@ -28,7 +28,6 @@ class Solution {
 
         String[] answer = new String[strings.length];
         int nthcharindex = 0;
-        int stringindex = 0;
 
         boolean[] isstringused= new boolean[strings.length];
 
