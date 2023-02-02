@@ -60,3 +60,19 @@ class Solution {
         return answer;
     }
 }
+
+
+/* 주희님 답안 최대공약수 부분
+    //GCD, 최대공약수
+    int gcd = -1; //최대공약수를 담을 변수는 우선 -1로 초기화 해주고,
+for (int i : (ArrayList<Integer>)arrN) { //arrN에 담긴 N의 약수와
+        for (int j : (ArrayList<Integer>)arrM) { //arrM에 담긴 M의 약수를 이중 for문으로 돌며,
+        if (i == j) { //i와 j가 같을 때, 즉, N과 M의 약수가 같을 때
+        if (gcd < i) { //gcd보다 큰 것을 비교하여
+        gcd = i; //그 수를 gcd에 바꿔치기 해준다.
+        }
+        }
+        }
+        }
+
+ */
