@@ -10,8 +10,8 @@ package prac147355_크기가작은부분문자열;
 public class Prac147355 {
     public static void main(String[] args) {
         Solution s = new Solution();
-        String t= "500220839878";
-        String p = "7";
+        String t= "10203";
+        String p = "15";
         System.out.println(s.solution(t,p));
     }
 }
@@ -23,13 +23,13 @@ class Solution {
         int answer = 0;
         String[] tt = t.split("");
 
-        for (int i = 0; i < t.length() - p.length(); i++) {
+        for (int i = 0; i < t.length() - p.length()+1; i++) {
             String aa = "";
-            for (int j = i; j < p.length(); j++) {
+            for (int j = i; j < i+p.length(); j++) {
                 aa += tt[j];
             }
-            int a = Integer.parseInt(aa);
-            if(a < Integer.parseInt(p)) {
+            long a = Long.parseLong(aa);
+            if(a <= Long.parseLong(p)) {
                 answer++;
             }
         }
