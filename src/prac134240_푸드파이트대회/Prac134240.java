@@ -20,10 +20,10 @@ class Solution {
 
         StringBuilder sb2 = new StringBuilder(sb);
 
-        sb2.append(0);
-        sb.reverse();
-        sb2.append(sb);
-        return sb2.toString();
+        sb.append(0);
+        sb2.reverse();
+        sb.append(sb2);
+        return sb.toString();
     }
 }
 
