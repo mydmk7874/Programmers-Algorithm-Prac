@@ -24,8 +24,8 @@ class Solution {
     public int solution(int[] citations) {
         int answer = 0;
 
-        int[] temp = Arrays.stream(citations).boxed()
-                .sorted().mapToInt(Integer::intValue).toArray();
+        int[] temp = citations.clone();
+        Arrays.sort(temp);
 
         if(temp[temp.length-1] == 0) {
             return 0;
