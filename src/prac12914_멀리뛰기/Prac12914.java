@@ -23,7 +23,6 @@ public class Prac12914 {
 
 class Solution {
     public long solution(int n) {
-        long answer = 0;
 
         if(n == 1) {
             return 1;
